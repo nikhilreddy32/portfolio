@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikhil Reddy Chinthakunta</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0b1220;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: -1;
+}
+
+.hero-name {
+  font-size: clamp(60px, 8vw, 130px);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  color: #d1d5db;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 20px rgba(59,130,246,0.6);
+  transform: translateY(-2px);
+}
+</style>
+</head>
+
+<body class="text-white">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LEFT NAVIGATION -->
+    <nav class="flex gap-8 text-sm">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- RIGHT INITIALS -->
+    <div class="text-blue-500 font-extrabold text-lg tracking-wider">
+      NRC
+    </div>
+
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="min-h-screen flex items-center justify-center text-center px-6 pt-32">
+  <div>
+    <h1 class="hero-name">
+      Nikhil Reddy <br>
+      <span class="gradient-text">Chinthakunta</span>
+    </h1>
+
+    <p class="mt-8 text-xl text-gray-400 max-w-2xl mx-auto">
+      Building scalable backend systems for 2M+ users with 99.9% uptime
+    </p>
+
+    <p class="mt-4 text-gray-500">
+      Sunnyvale, CA • SaaS • FinTech • Cloud-Native Systems
+    </p>
+
+    <div class="mt-10 flex justify-center gap-6">
+      <a href="#contact"
+         class="glow-btn px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 font-semibold transition">
+         Get In Touch
+      </a>
+
+      <a href="#experience"
+         class="glow-btn px-8 py-4 rounded-xl border border-white/20 text-gray-300 hover:text-white transition">
+         View Experience ↓
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-28 px-6 text-center">
+
+  <!-- Section Label -->
+  <p class="text-blue-500 tracking-widest font-semibold mb-4">
+    ABOUT ME
+  </p>
+
+  <!-- Main Heading -->
+  <h2 class="text-5xl md:text-6xl font-extrabold mb-12">
+    Professional Summary
+  </h2>
+
+  <!-- Glass Summary Card -->
+  <div class="max-w-4xl mx-auto bg-white/5 border border-white/10 
+              rounded-2xl p-10 backdrop-blur-md shadow-xl">
+
+    <p class="text-lg md:text-xl leading-relaxed text-gray-300 text-left">
+
+      <span class="font-semibold text-white">
+        Senior Data Engineer with 5+ years of experience
+      </span> designing and building 
+      <span class="font-semibold text-white">
+        scalable backend systems
+      </span> for SaaS and fintech applications.
+
+      Proven expertise in 
+      <span class="font-semibold text-white">REST API development</span>, 
+      <span class="font-semibold text-white">microservices architecture</span>, 
+      and 
+      <span class="font-semibold text-white">cloud-native solutions</span>.
+
+      Delivered measurable impact including 
+      <span class="text-blue-400 font-semibold">
+        40% database performance improvement
+      </span> and 
+      <span class="text-blue-400 font-semibold">
+        99.9% system uptime
+      </span>.
+
+      Proficient in 
+      <span class="font-semibold text-white">
+        Python, SQL, Spark, AWS, Snowflake, dbt, and Azure.
+      </span>
+
+    </p>
+  </div>
+
+  <!-- Metrics Cards -->
+  <div class="grid md:grid-cols-4 gap-6 mt-14 max-w-6xl mx-auto">
+
+    <!-- Card 1 -->
+    <div class="bg-white/5 border border-white/10 
+                rounded-xl p-8 backdrop-blur-md 
+                hover:shadow-blue-500/30 hover:shadow-lg transition">
+
+      <div class="text-blue-500 text-2xl mb-4">⚙️</div>
+      <h3 class="text-3xl font-bold">5+ Years</h3>
+      <p class="text-gray-400 mt-2">Data Engineering</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white/5 border border-white/10 
+                rounded-xl p-8 backdrop-blur-md 
+                hover:shadow-blue-500/30 hover:shadow-lg transition">
+
+      <div class="text-blue-500 text-2xl mb-4">📈</div>
+      <h3 class="text-3xl font-bold">99.9%</h3>
+      <p class="text-gray-400 mt-2">System Uptime</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white/5 border border-white/10 
+                rounded-xl p-8 backdrop-blur-md 
+                hover:shadow-blue-500/30 hover:shadow-lg transition">
+
+      <div class="text-blue-500 text-2xl mb-4">🚀</div>
+      <h3 class="text-3xl font-bold">40%</h3>
+      <p class="text-gray-400 mt-2">Performance Boost</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white/5 border border-white/10 
+                rounded-xl p-8 backdrop-blur-md 
+                hover:shadow-blue-500/30 hover:shadow-lg transition">
+
+      <div class="text-blue-500 text-2xl mb-4">👥</div>
+      <h3 class="text-3xl font-bold">2M+</h3>
+      <p class="text-gray-400 mt-2">Users Supported</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="py-28 px-6 text-center relative">
+
+  <p class="text-blue-500 tracking-widest font-semibold mb-4">
+    TECHNICAL EXPERTISE
+  </p>
+
+  <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+    Full-Stack Software Development Skills
+  </h2>
+
+  <p class="text-gray-400 max-w-3xl mx-auto mb-16">
+    End-to-end expertise across frontend, backend, cloud, databases,
+    and AI-powered application development
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+    <!-- Programming -->
+    <div class="skill-card">
+      <div class="icon-box blue">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
+      </div>
+      <h3>Programming Languages</h3>
+      <div class="pill-container">
+        <span>Python</span><span>SQL</span><span>Java</span><span>R</span>
+        <span>JavaScript</span><span>TypeScript</span><span>C#</span>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="skill-card">
+      <div class="icon-box cyan">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="14" rx="2"/>
+          <line x1="8" y1="20" x2="16" y2="20"/>
+        </svg>
+      </div>
+      <h3>Frontend Development</h3>
+      <div class="pill-container">
+        <span>React.js</span><span>Next.js</span>
+        <span>HTML5</span><span>CSS3</span>
+        <span>Tailwind CSS</span><span>Responsive Design</span>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-card">
+      <div class="icon-box green">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82"/>
+        </svg>
+      </div>
+      <h3>Backend Development</h3>
+      <div class="pill-container">
+        <span>Spring Boot</span><span>Node.js</span>
+        <span>REST APIs</span><span>Microservices</span>
+        <span>Hibernate/JPA</span>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-card">
+      <div class="icon-box pink">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <ellipse cx="12" cy="5" rx="9" ry="3"/>
+          <path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"/>
+        </svg>
+      </div>
+      <h3>Databases & Caching</h3>
+      <div class="pill-container">
+        <span>PostgreSQL</span><span>MySQL</span>
+        <span>MongoDB</span><span>Redis</span>
+        <span>Database Design</span><span>Query Optimization</span>
+      </div>
+    </div>
+
+    <!-- Cloud -->
+    <div class="skill-card">
+      <div class="icon-box orange">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 17.5a4.5 4.5 0 0 0-3.5-7.5A6 6 0 0 0 5 10a4 4 0 0 0 0 8h15z"/>
+        </svg>
+      </div>
+      <h3>Cloud & DevOps</h3>
+      <div class="pill-container">
+        <span>AWS (EC2, S3, RDS)</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>CI/CD</span>
+        <span>Jenkins</span>
+        <span>Git & GitHub</span>
+      </div>
+    </div>
+
+    <!-- AI -->
+    <div class="skill-card">
+      <div class="icon-box purple">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="4" y="4" width="16" height="16" rx="3"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+      </div>
+      <h3>AI & Generative AI</h3>
+      <div class="pill-container">
+        <span>LLM Integration</span>
+        <span>OpenAI APIs</span>
+        <span>Prompt Engineering</span>
+        <span>RAG Applications</span>
+        <span>Vector Databases</span>
+      </div>
+    </div>
+
+    <!-- Software Engineering -->
+    <div class="skill-card md:col-span-1">
+      <div class="icon-box indigo">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2l4 4-8 8-4 1 1-4 8-8z"/>
+        </svg>
+      </div>
+      <h3>Software Engineering</h3>
+      <div class="pill-container">
+        <span>System Design</span>
+        <span>Design Patterns</span>
+        <span>Agile/Scrum</span>
+        <span>Jira</span>
+        <span>Unit Testing</span>
+      </div>
+    </div>
+
+  </div>
+  
+  <style>
+.skill-card {
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 32px;
+  text-align: left;
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(120deg, #3b82f6, transparent, #3b82f6);
+  -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.skill-card:hover::before { opacity: 0.6; }
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(59,130,246,0.2);
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.icon-box.blue   { background: linear-gradient(135deg,#2563eb,#3b82f6); }
+.icon-box.cyan   { background: linear-gradient(135deg,#0891b2,#06b6d4); }
+.icon-box.green  { background: linear-gradient(135deg,#16a34a,#22c55e); }
+.icon-box.pink   { background: linear-gradient(135deg,#db2777,#ec4899); }
+.icon-box.orange { background: linear-gradient(135deg,#ea580c,#f97316); }
+.icon-box.purple { background: linear-gradient(135deg,#7c3aed,#a855f7); }
+.icon-box.indigo { background: linear-gradient(135deg,#4f46e5,#6366f1); }
+
+.skill-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: white;
+}
+
+.pill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill-container span {
+  background: rgba(255,255,255,0.08);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #d1d5db;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s ease;
+}
+
+.pill-container span:hover {
+  background: rgba(59,130,246,0.2);
+  color: #3b82f6;
+}
+</style>
+</section>
+
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-28 px-6 text-center">
+
+  <!-- Section Label -->
+  <p class="text-blue-500 tracking-widest font-semibold mb-4">
+    CAREER JOURNEY
+  </p>
+
+  <!-- Heading -->
+  <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+    Professional Experience
+  </h2>
+
+  <p class="text-gray-400 max-w-3xl mx-auto mb-16">
+    Building scalable systems at world-class technology companies
+  </p>
+
+  <div class="max-w-6xl mx-auto space-y-16">
+
+    <!-- ===== EXPERIENCE 1 ===== -->
+    <div class="exp-card">
+
+      <!-- Company Row -->
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-6 h-6 bg-blue-600 rounded-md"></div>
+        <h3 class="text-xl font-semibold">IBM</h3>
+        <span class="current-pill">Current</span>
+      </div>
+
+      <p class="text-gray-300 font-medium mb-2">Senior Data Engineer</p>
+
+      <div class="text-gray-400 text-sm flex gap-6 mb-8">
+        <span>Jul 2023 – Present</span>
+        <span>United States</span>
+      </div>
+
+      <!-- Metrics Strip -->
+      <div class="metric-strip">
+        <div><h4>2M+</h4><p>Users</p></div>
+        <div><h4>99.9%</h4><p>Uptime</p></div>
+        <div><h4>500K+</h4><p>Daily Transactions</p></div>
+        <div><h4>35%</h4><p>Response Time ↓</p></div>
+      </div>
+
+      <!-- Bullets -->
+      <ul class="bullet-list">
+        <li>Engineered scalable data pipelines serving 2M+ users with 99.9% uptime</li>
+        <li>Optimized Snowflake and Spark workloads reducing latency by 35%</li>
+        <li>Implemented CI/CD and monitoring improving reliability across cloud systems</li>
+      </ul>
+
+    </div>
+
+    <!-- ===== EXPERIENCE 2 ===== -->
+    <div class="exp-card">
+
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-6 h-6 bg-blue-600 rounded-md"></div>
+        <h3 class="text-xl font-semibold">Infosys</h3>
+      </div>
+
+      <p class="text-gray-300 font-medium mb-2">Data Engineer</p>
+
+      <div class="text-gray-400 text-sm flex gap-6 mb-8">
+        <span>Jan 2021 – Jun 2023</span>
+        <span>India</span>
+      </div>
+
+      <div class="metric-strip">
+        <div><h4>500+</h4><p>Enterprise Clients</p></div>
+        <div><h4>10M+</h4><p>Daily Records</p></div>
+        <div><h4>20+</h4><p>ETL Pipelines</p></div>
+        <div><h4>40%</h4><p>Performance ↑</p></div>
+      </div>
+
+      <ul class="bullet-list">
+        <li>Developed large-scale ETL pipelines processing 10M+ records daily</li>
+        <li>Designed optimized data warehouse models improving performance by 40%</li>
+        <li>Collaborated cross-functionally to deliver enterprise analytics solutions</li>
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+.exp-card {
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(59,130,246,0.4);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: left;
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+}
+
+.exp-card:hover {
+  box-shadow: 0 20px 60px rgba(59,130,246,0.25);
+  transform: translateY(-6px);
+}
+
+.current-pill {
+  background: #2563eb;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.metric-strip {
+  background: rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.metric-strip h4 {
+  color: #3b82f6;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.metric-strip p {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.bullet-list {
+  list-style: none;
+  padding-left: 0;
+  color: #d1d5db;
+}
+
+.bullet-list li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.bullet-list li::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
+</style>
+<!-- PROJECTS -->
+<section id="projects" class="py-28 px-6 text-center">
+
+  <!-- Section Label -->
+  <p class="text-blue-500 tracking-widest font-semibold mb-4">
+    FEATURED WORK
+  </p>
+
+  <!-- Heading -->
+  <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+    Key Projects
+  </h2>
+
+  <p class="text-gray-400 max-w-3xl mx-auto mb-16">
+    Architecting high-performance systems that deliver measurable business impact
+  </p>
+
+  <div class="max-w-6xl mx-auto">
+
+    <!-- ===== MAIN PROJECT CARD ===== -->
+    <div class="project-card mb-16">
+
+      <h3 class="text-3xl font-bold mb-4">
+        Scalable Event-Driven SaaS Analytics Platform
+      </h3>
+
+      <p class="text-gray-400 mb-10">
+        A real-time event processing system designed to handle massive-scale
+        analytics workloads with enterprise-grade performance and reliability.
+      </p>
+
+      <!-- Metrics -->
+      <div class="metric-strip mb-8">
+        <div><h4>100K+</h4><p>Events/Hour</p></div>
+        <div><h4>1.2s</h4><p>Latency</p></div>
+        <div><h4>50%</h4><p>Throughput ↑</p></div>
+        <div><h4>87%</h4><p>Deployment ↓</p></div>
+      </div>
+
+      <!-- Tech Stack Pills -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="tech-pill">Apache Kafka</span>
+        <span class="tech-pill">Spring Boot</span>
+        <span class="tech-pill">PostgreSQL</span>
+        <span class="tech-pill">Docker</span>
+        <span class="tech-pill">AWS</span>
+        <span class="tech-pill">Jenkins CI/CD</span>
+      </div>
+
+    </div>
+
+    <!-- ===== FEATURE GRID ===== -->
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Card -->
+      <div class="feature-card">
+        <div class="icon orange">⚡</div>
+        <h4>Real-Time Processing</h4>
+        <p>Architected real-time event system handling 100K+ events/hour using Apache Kafka</p>
+        <span class="badge">100K+ events/hr</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon green">📈</div>
+        <h4>Throughput Improvement</h4>
+        <p>Achieved 50% throughput improvement and reduced latency from 5s to 1.2s</p>
+        <span class="badge">50% improvement</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon blue">🗄</div>
+        <h4>Query Optimization</h4>
+        <p>Optimized PostgreSQL queries improving performance by 50%</p>
+        <span class="badge">50% faster</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon pink">📊</div>
+        <h4>Database Load Reduction</h4>
+        <p>Reduced database load by 35% through intelligent caching</p>
+        <span class="badge">35% reduction</span>
+      </div>
+
+      <div class="feature-card highlight">
+        <div class="icon purple">☁</div>
+        <h4>Containerized Deployment</h4>
+        <p>Deployed microservices on AWS using Docker and Jenkins CI/CD</p>
+        <span class="badge">Cloud-native</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon red">⏱</div>
+        <h4>Deployment Speed</h4>
+        <p>Reduced deployment time by 87% from 2 hours to 15 minutes</p>
+        <span class="badge">87% faster</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+
+/* MAIN CARD */
+.project-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(59,130,246,0.4);
+  border-radius: 20px;
+  padding: 50px;
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 25px 70px rgba(59,130,246,0.25);
+}
+
+/* METRIC STRIP */
+.metric-strip {
+  background: rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.metric-strip h4 {
+  color: #3b82f6;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.metric-strip p {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* TECH PILLS */
+.tech-pill {
+  background: rgba(255,255,255,0.07);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #d1d5db;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.tech-pill:hover {
+  background: rgba(59,130,246,0.2);
+  color: #3b82f6;
+}
+
+/* FEATURE CARDS */
+.feature-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: left;
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 50px rgba(59,130,246,0.2);
+}
+
+.feature-card.highlight {
+  border: 1px solid rgba(59,130,246,0.6);
+}
+
+/* ICON */
+.icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.orange { background: linear-gradient(135deg,#f97316,#fb923c); }
+.green { background: linear-gradient(135deg,#22c55e,#4ade80); }
+.blue { background: linear-gradient(135deg,#3b82f6,#60a5fa); }
+.pink { background: linear-gradient(135deg,#ec4899,#f472b6); }
+.purple { background: linear-gradient(135deg,#7c3aed,#a855f7); }
+.red { background: linear-gradient(135deg,#ef4444,#f87171); }
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 12px;
+  background: rgba(59,130,246,0.2);
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #3b82f6;
+}
+</style>
+
+<!-- EDUCATION -->
+<section id="education" class="py-28 px-6 text-center">
+
+  <!-- Section Label -->
+  <p class="text-blue-500 tracking-widest font-semibold mb-4">
+    ACADEMIC BACKGROUND
+  </p>
+
+  <!-- Heading -->
+  <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+    Education
+  </h2>
+
+  <p class="text-gray-400 max-w-3xl mx-auto mb-16">
+    Strong academic foundation in data engineering, analytics, and computer science
+  </p>
+
+  <div class="max-w-5xl mx-auto space-y-10">
+
+    <!-- ===== MASTER'S ===== -->
+    <div class="edu-card">
+      <div class="flex gap-6 items-start text-left">
+
+        <!-- Icon -->
+        <div class="edu-icon blue">
+          🎓
+        </div>
+
+        <div class="flex-1">
+          <span class="badge graduate">Graduate</span>
+
+          <h3 class="edu-title">
+            Master of Science in Information Studies
+          </h3>
+
+          <p class="edu-school">
+            Trine University
+          </p>
+<div class="edu-meta">
+  <span class="meta-item">
+    <i data-lucide="calendar" class="meta-icon"></i>
+    July 2023
+  </span>
+
+  <span class="meta-item">
+    <i data-lucide="map-pin" class="meta-icon"></i>
+    United States
+  </span>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BACHELOR'S ===== -->
+    <div class="edu-card highlight">
+      <div class="flex gap-6 items-start text-left">
+
+        <!-- Icon -->
+        <div class="edu-icon pink">
+          🎓
+        </div>
+
+        <div class="flex-1">
+          <span class="badge undergrad">Undergraduate</span>
+
+          <h3 class="edu-title text-blue-400">
+            Bachelor of Technology in Computer Science & Engineering
+          </h3>
+
+          <p class="edu-school">
+            Sphoorthy Engineering College
+          </p>
+
+         <div class="edu-meta">
+  <span class="meta-item">
+    <i data-lucide="calendar" class="meta-icon"></i>
+    Aug 2019
+  </span>
+
+  <span class="meta-item">
+    <i data-lucide="map-pin" class="meta-icon"></i>
+    India
+  </span>
+</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== DEGREE SUMMARY STRIP ===== -->
+  <div class="max-w-4xl mx-auto mt-16">
+    <div class="degree-strip">
+      <div>
+        <h4>MS</h4>
+        <p>Information Studies</p>
+      </div>
+      <div>
+        <h4>BS</h4>
+        <p>Computer Science</p>
+      </div>
+      <div>
+        <h4>4+</h4>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<style>
+
+/* Education Card */
+.edu-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(14px);
+  transition: 0.4s ease;
+}
+
+.edu-card:hover {
+  border: 1px solid rgba(59,130,246,0.6);
+  box-shadow: 0 20px 60px rgba(59,130,246,0.25);
+}
+
+.edu-card.highlight {
+  border: 1px solid rgba(236,72,153,0.5);
+}
+
+.edu-card.highlight:hover {
+  box-shadow: 0 20px 60px rgba(236,72,153,0.25);
+}
+
+/* Icon */
+.edu-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.edu-icon.blue {
+  background: linear-gradient(135deg,#3b82f6,#60a5fa);
+}
+
+.edu-icon.pink {
+  background: linear-gradient(135deg,#ec4899,#f472b6);
+}
+
+/* Title */
+.edu-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.edu-school {
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+.edu-meta {
+  margin-top: 12px;
+  display: flex;
+  gap: 25px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.graduate {
+  background: rgba(59,130,246,0.2);
+  color: #3b82f6;
+}
+
+.undergrad {
+  background: rgba(168,85,247,0.2);
+  color: #a855f7;
+}
+
+/* Degree Strip */
+.degree-strip {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+}
+
+.degree-strip h4 {
+  font-size: 28px;
+  color: #3b82f6;
+  font-weight: 800;
+}
+
+.degree-strip p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+</style>
+
+<!-- CONTACT -->
+<!-- LUCIDE ICON CDN (Place in <head>) -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="contact-section">
+
+  <p class="section-label">GET IN TOUCH</p>
+  <h2 class="section-title">Let's Connect</h2>
+
+  <p class="section-subtitle">
+    Open to new opportunities and collaborations. Feel free to reach out!
+  </p>
+
+  <div class="contact-container">
+
+    <!-- Main Card -->
+    <div class="contact-card">
+
+      <!-- Top Icon -->
+      <div class="icon-square blue">
+        <i data-lucide="mail"></i>
+      </div>
+
+      <h3>Ready to collaborate?</h3>
+      <p class="card-subtitle">
+        Let's discuss how I can contribute to your team's success
+      </p>
+
+      <!-- Buttons -->
+      <div class="button-group">
+        <button onclick="copyEmail()" id="copyBtn" class="btn-primary">
+          <i data-lucide="mail"></i>
+          <span id="copyText">Copy Email</span>
+        </button>
+
+        <a href="mailto:your.email@gmail.com" class="btn-secondary">
+          <i data-lucide="send"></i>
+          Send Email
+        </a>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Email + Location -->
+      <div class="info-grid">
+
+        <div class="info-block">
+          <div class="icon-small blue">
+            <i data-lucide="mail"></i>
+          </div>
+          <div>
+            <p class="info-label">Email</p>
+            <p class="info-value">your.email@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="icon-small blue">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <div>
+            <p class="info-label">Location</p>
+            <p class="info-value">Ohio, United States</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-grid">
+
+      <div class="social-grid">
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/nikhil-reddy" target="_blank" class="social-card">
+    <div class="icon-small blue">
+      <i data-lucide="linkedin"></i>
+    </div>
+    <div>
+      <p class="info-label">LinkedIn</p>
+      <p class="info-value">/nikhil-reddy</p>
+    </div>
+    <i data-lucide="send" class="arrow-icon"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/nikhilreddy32" target="_blank" class="social-card">
+    <div class="icon-small gray">
+      <i data-lucide="github"></i>
+    </div>
+    <div>
+      <p class="info-label">GitHub</p>
+      <p class="info-value">/nikhilreddy32</p>
+    </div>
+    <i data-lucide="send" class="arrow-icon"></i>
+  </a>
+
+  <!-- Download Resume -->
+  <a href="Nikhil_Reddy_Resume.pdf" download class="social-card resume-card">
+    <div class="icon-small green">
+      <i data-lucide="download"></i>
+    </div>
+    <div>
+      <p class="info-label">Resume</p>
+      <p class="info-value">Download PDF</p>
+    </div>
+    <i data-lucide="arrow-down-circle" class="arrow-icon"></i>
+  </a>
+
+</div>
+
+    </div>
+
+  </div>
+
+  <p class="footer-text">
+    © 2026 Nikhil Reddy Chinthakunta. All rights reserved.
+    <br>
+    Built with HTML, CSS, and Motion.
+  </p>
+
+</section>
+
+
+<!-- ================= STYLES ================= -->
+<style>
+.green {
+  background: linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+.resume-card:hover {
+  border: 1px solid rgba(34,197,94,0.6);
+  box-shadow: 0 15px 40px rgba(34,197,94,0.25);
+}
+
+.contact-section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.section-label {
+  color: #3b82f6;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  color: #9ca3af;
+  margin-bottom: 60px;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 60px 40px;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+}
+
+.contact-card:hover {
+  border: 1px solid rgba(59,130,246,0.6);
+  box-shadow: 0 20px 60px rgba(59,130,246,0.3);
+}
+
+.icon-square {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.icon-square i {
+  width: 34px;
+  height: 34px;
+  stroke: white;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg,#3b82f6,#2563eb);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.08);
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 30px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.icon-small {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-small i {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+}
+
+.blue {
+  background: linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.gray {
+  background: linear-gradient(135deg,#6b7280,#4b5563);
+}
+
+.info-label {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.info-value {
+  color: #f3f4f6;
+  font-weight: 500;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.social-card:hover {
+  border: 1px solid rgba(59,130,246,0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(59,130,246,0.2);
+}
+
+.arrow-icon {
+  margin-left: auto;
+  width: 18px;
+  height: 18px;
+  stroke: #9ca3af;
+}
+
+.footer-text {
+  margin-top: 80px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+</style>
+
+
+<!-- Activate Lucide Icons -->
+<script>
+lucide.createIcons();
+
+function copyEmail() {
+  navigator.clipboard.writeText("your.email@gmail.com");
+  document.getElementById("copyText").innerText = "Copied ✓";
+  setTimeout(() => {
+    document.getElementById("copyText").innerText = "Copy Email";
+  }, 2000);
+}
+</script>
+
+</body>
+</html>
